@@ -1,0 +1,17 @@
+###> ide ###
+.idea/
+###< ide ###
+
+###> misc ###
+.DS_Store
+###< misc ###
+
+###> vendor ###
+/vendor/
+###< vendor ###
+
+###> phpunit ###
+.phpunit
+.phpunit.result.cache
+/phpunit.xml
+###< phpunit ###

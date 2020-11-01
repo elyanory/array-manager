@@ -1,0 +1,29 @@
+{
+    "type": "project",
+    "name": "elyanor/array-manager",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12",
+        "phpunit/phpunit": "^9"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Elyanor\\ArrayManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Elyanor\\ArrayManager\\Tests\\": "tests/"
+        }
+    }
+}

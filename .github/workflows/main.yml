@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - develop
+name: Build
+jobs:
+  main:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: composer install -n --prefer-dist
+      - name: Run QC
+        run: ./vendor/bin/phpstan analyse src
+      - name: Run tests
+        run: bin/phpunit --testsuite "Unit tests"
