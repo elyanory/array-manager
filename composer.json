@@ -2,6 +2,7 @@
     "type": "project",
     "name": "elyanor/array-manager",
     "license": "MIT",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=7.0"
     },
